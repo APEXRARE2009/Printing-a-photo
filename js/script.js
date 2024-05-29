@@ -107,4 +107,5 @@ function resetValues() {
 	itemSumm[0].textContent = 0;
 	itemSumm[1].textContent = 0;
 	itemSumm[2].textContent = 0;
+	input.value = "";
 }
