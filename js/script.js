@@ -17,6 +17,8 @@ function clickBtn() {
 	checkValues()
 }
 
+btnReset.addEventListener("click", resetValues)
+
 let formatPrices = {
 	matte: {
 		A1: 75,
@@ -92,4 +94,17 @@ function checkValues() {
 		getPrice();
 		error.classList.remove("rotateX-0");
 	}
+}
+
+function resetValues() {
+	radioFormat.map((radioF) => {
+		radioF.checked = false;
+	})
+	radioCoating.map((radioC) => {
+		radioC.checked = false;
+	})
+	error.classList.remove("rotateX-0");
+	itemSumm[0].textContent = 0;
+	itemSumm[1].textContent = 0;
+	itemSumm[2].textContent = 0;
 }
