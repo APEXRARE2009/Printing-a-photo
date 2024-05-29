@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kode+Mono:wght@400..700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+	<link rel="icon" href="img/ligth-icon2.png">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Printing a photo</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="bg">
+			<video class="bg-video" muted="muted" autoplay="autoplay" loop src="img/bg2-original.mp4"></video>
+		</div>
+		<div class="alert-error">
+			<div class="alert-error-content">
+				<div class="alert-error-content-txt">select the format</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content__block-name">
+				<div class="content__block-name-title">Printing a photo</div>
+				<div class="content__block-name-subtitle">1 print = 20 rubles</div>
+			</div>
+			<div class="content__block-choice">
+				<div class="content__block-choice-format">
+					<div class="content__block-choice-format-title">format</div>
+					<div class="content__block-choice-format-list">
+						<div class="content__block-choice-format-list-item">
+							<label class="label">
+								<input class="content__block-choice-format-list-item-radio" type="radio" id="A1" name="formatRadio">
+								<div class="custom-radio"></div>
+								<div class="content__block-choice-format-list-item-name"><span class="font-comfortaa">A1</span> (59.4 × 84.1 cm)</div>
+							</label>
+						</div>
+						<div class="content__block-choice-format-list-item">
+							<label class="label">
+								<input class="content__block-choice-format-list-item-radio" type="radio" id="A2" name="formatRadio">
+								<div class="custom-radio"></div>
+								<div class="content__block-choice-format-list-item-name"><span class="font-comfortaa">A2</span> (42 × 59.4 cm)</div>
+							</label>
+						</div>
+						<div class="content__block-choice-format-list-item">
+							<label class="label">
+								<input class="content__block-choice-format-list-item-radio" type="radio" id="A3" name="formatRadio">
+								<div class="custom-radio"></div>
+								<div class="content__block-choice-format-list-item-name"><span class="font-comfortaa">A3</span> (29.7 × 42 cm)</div>
+							</label>
+						</div>
+						<div class="content__block-choice-format-list-item">
+							<label class="label">
+								<input class="content__block-choice-format-list-item-radio" type="radio" id="A4" name="formatRadio">
+								<div class="custom-radio"></div>
+								<div class="content__block-choice-format-list-item-name"><span class="font-comfortaa">A4</span> (21 × 29.7 cm)</div>
+							</label>
+						</div>
+						<div class="content__block-choice-format-list-item">
+							<label class="label">
+								<input class="content__block-choice-format-list-item-radio" type="radio" id="A5" name="formatRadio">
+								<div class="custom-radio"></div>
+								<div class="content__block-choice-format-list-item-name"><span class="font-comfortaa">A5</span> (14.8 × 21 cm)</div>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="content__block-choice-coating">
+					<div class="content__block-choice-coating-title">Type of coating</div>
+					<div class="content__block-choice-coating-list">
+						<div class="content__block-choice-coating-list-item">
+							<label class="label">
+								<input class="content__block-choice-coating-list-item-radio" id="matte" type="radio" name="coatingRadio">
+								<div class="custom-radio"></div>
+								<div class="content__block-choice-coating-list-item-name">matte</div>
+							</label>
+						</div>
+						<div class="content__block-choice-coating-list-item">
+							<label class="label">
+								<input class="content__block-choice-coating-list-item-radio" id="glossy" type="radio" name="coatingRadio">
+								<div class="custom-radio"></div>
+								<div class="content__block-choice-coating-list-item-name">glossy</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content__block-preparation">
+				<input class="content__block-preparation-input" type="number" placeholder="quantity">
+				<div class="content__block-preparation-wrap">
+					<button class="content__block-preparation-wrap-calculate">calculate</button>
+					<button class="content__block-preparation-wrap-reset">reset</button>
+				</div>
+				<div class="error"></div>
+			</div>
+			<div class="content__block-total">
+				<div class="content__block-total-title">total</div>
+				<div class="content__block-total-list">
+					<div class="content__block-total-list-item">
+						<div class="content__block-total-list-item-name">the price of one photo:</div>
+						<div class="content__block-total-list-item-wrap">
+							<div class="content__block-total-list-item-wrap-summ">0</div>
+							<div class="content__block-total-list-item-wrap-sign">₽</div>
+						</div>
+					</div>
+					<div class="content__block-total-list-item">
+						<div class="content__block-total-list-item-name">quantity:</div>
+						<div class="content__block-total-list-item-wrap">
+							<div class="content__block-total-list-item-wrap-summ">0</div>
+						</div>
+					</div>
+					<div class="content__block-total-list-item">
+						<div class="content__block-total-list-item-name">order amount:</div>
+						<div class="content__block-total-list-item-wrap">
+							<div class="content__block-total-list-item-wrap-summ">0</div>
+							<div class="content__block-total-list-item-wrap-sign">₽</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
